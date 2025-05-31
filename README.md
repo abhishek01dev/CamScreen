@@ -2,7 +2,7 @@
 
 CamScreen is a modern, web-based application built with Next.js that allows users to easily record their screen and webcam simultaneously. It's designed for creating tutorials, demos, presentations, or any content that benefits from showing both screen activity and a personal video feed. Recordings are processed locally in the browser and can be downloaded directly as `.webm` files.
 
-This project was bootstrapped in Firebase Studio.
+
 
 ## Core Features
 
