@@ -32,7 +32,7 @@ To get this project running locally:
 1.  **Clone the repository (if applicable)**:
 
     ```bash
-    git clone <https://github.com/abhishek01dev/CamScreen.git>
+    git clone https://github.com/abhishek01dev/CamScreen.git
     cd camscreen-project-directory
     ```
 
