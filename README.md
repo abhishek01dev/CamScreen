@@ -30,13 +30,15 @@ This project was bootstrapped in Firebase Studio.
 To get this project running locally:
 
 1.  **Clone the repository (if applicable)**:
+
     ```bash
-    git clone <your-repository-url>
+    git clone <https://github.com/abhishek01dev/CamScreen.git>
     cd camscreen-project-directory
     ```
 
 2.  **Install dependencies**:
     Ensure you have Node.js and npm (or yarn/pnpm) installed.
+
     ```bash
     npm install
     # or
@@ -49,6 +51,7 @@ To get this project running locally:
     If you are using AI features that require API keys (like Google AI for Genkit), you might need to set up a `.env.local` file. Refer to Genkit and Google AI documentation for specifics. For the filename generation with the default `gemini-2.0-flash` model, ensure your environment is configured for Google AI.
 
 4.  **Run the development server**:
+
     ```bash
     npm run dev
     # or
@@ -56,6 +59,7 @@ To get this project running locally:
     # or
     # pnpm dev
     ```
+
     This will typically start the app on `http://localhost:9002` (as per `package.json` script).
 
 5.  **For Genkit development (if modifying AI flows)**:
@@ -69,29 +73,29 @@ To get this project running locally:
 
 ## Project Structure
 
--   `src/app/`: Main Next.js application pages and layouts.
-    -   `page.tsx`: The main entry point and UI for the recorder.
-    -   `layout.tsx`: Root layout, including font setup and Toaster.
-    -   `globals.css`: Global styles and ShadCN theme variables.
--   `src/components/`: Reusable React components.
-    -   `ui/`: ShadCN UI components.
-    -   `recorder-controls.tsx`: Component for start/stop/download buttons and filename input.
-    -   `video-previews.tsx`: Component for displaying screen and webcam video elements.
--   `src/hooks/`: Custom React hooks.
-    -   `use-media-recorder.ts`: Core logic for screen recording, stream management, and AI filename generation.
-    -   `use-toast.ts`: Custom toast notification hook.
--   `src/ai/`: Genkit AI related files.
-    -   `genkit.ts`: Genkit initialization and configuration.
-    -   `flows/filenameGenerator.ts`: Genkit flow for generating filenames.
--   `public/`: Static assets (if any).
--   `next.config.ts`: Next.js configuration.
--   `tailwind.config.ts`: Tailwind CSS configuration.
--   `components.json`: ShadCN UI configuration.
+- `src/app/`: Main Next.js application pages and layouts.
+  - `page.tsx`: The main entry point and UI for the recorder.
+  - `layout.tsx`: Root layout, including font setup and Toaster.
+  - `globals.css`: Global styles and ShadCN theme variables.
+- `src/components/`: Reusable React components.
+  - `ui/`: ShadCN UI components.
+  - `recorder-controls.tsx`: Component for start/stop/download buttons and filename input.
+  - `video-previews.tsx`: Component for displaying screen and webcam video elements.
+- `src/hooks/`: Custom React hooks.
+  - `use-media-recorder.ts`: Core logic for screen recording, stream management, and AI filename generation.
+  - `use-toast.ts`: Custom toast notification hook.
+- `src/ai/`: Genkit AI related files.
+  - `genkit.ts`: Genkit initialization and configuration.
+  - `flows/filenameGenerator.ts`: Genkit flow for generating filenames.
+- `public/`: Static assets (if any).
+- `next.config.ts`: Next.js configuration.
+- `tailwind.config.ts`: Tailwind CSS configuration.
+- `components.json`: ShadCN UI configuration.
 
 ## Browser Compatibility & Requirements
 
--   Screen recording APIs (`getDisplayMedia`) require a secure context (HTTPS or localhost).
--   Users will need to grant permissions for screen, camera, and microphone access.
--   Modern browsers (Chrome, Firefox, Edge, Safari latest versions) are recommended for best compatibility with WebRTC APIs.
+- Screen recording APIs (`getDisplayMedia`) require a secure context (HTTPS or localhost).
+- Users will need to grant permissions for screen, camera, and microphone access.
+- Modern browsers (Chrome, Firefox, Edge, Safari latest versions) are recommended for best compatibility with WebRTC APIs.
 
 This README should provide a good overview of CamScreen!
