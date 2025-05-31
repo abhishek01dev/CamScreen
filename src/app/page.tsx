@@ -82,7 +82,7 @@ export default function HomePage() {
       <footer className="w-full max-w-4xl mt-12 text-center text-sm text-muted-foreground">
         <p>&copy; {new Date().getFullYear()} CamScreen. All rights reserved.</p>
         <a
-          href="https://github.com/abhishek01dev"
+          href="https://github.com/abhishek01dev/CamScreen"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 hover:text-primary transition-colors mt-2"
